@@ -14,6 +14,7 @@ export default async function sendAlertToWebhooks(WEBHOOK_URLS, product_url, tit
 				},
 				body: JSON.stringify({
 					username: "StockAlertBot",
+					content: "@everyone",  // This pings everyone
 					embeds: [
 						{
 							title: title,
